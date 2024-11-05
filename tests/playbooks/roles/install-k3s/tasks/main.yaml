@@ -45,7 +45,7 @@
         openstack security group rule create --protocol udp --dst-port 1:65535 {{ sg_name }}
       fi
 
-      openstack subnet set private-subnet --dns-nameserver 8.8.8.8 || true
+      openstack subnet set private-subnet --dns-nameserver 10.1.34.5 --dns-nameserver 10.1.34.6 || true
 
 - name: Create port with floating IP
   shell:

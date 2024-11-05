@@ -1,0 +1,32 @@
+container:
+
+docker:
+
+kubernetes:
+	doployment
+	service
+	pod
+	kubeconfig
+
+Helm Charts:
+	- A collection of files that describe a related set of Kubernetes resources.
+	- A package manager for Kubernetes
+	*helm chart ile hello world uygulaması
+		- Chart.yaml
+		- values.yaml
+		- templates/
+			- deployment.yaml
+			- service.yaml
+			- ingress.yaml
+			- NOTES.txt
+		- charts/
+
+Esra hoca dedi:
+	basit pod kurulumu                    // Yapmisim zaten
+	helm chart nasil yazilir (manuel)
+	cloud admin olusturucak
+	safir hub a yuklicek
+
+
+notes:
+  chart hazirlarken servis tipini LoadBalancer yaparsak disaridan erisim saglanabilir. (Onemli)
